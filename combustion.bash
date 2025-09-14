@@ -28,7 +28,7 @@ sed -i "s+SELINUX=enforcing+SELINUX=permissive+g" /etc/selinux/config
 
 mkdir /var/orchestra
 cd /var/orchestra
-curl -O https://raw.githubusercontent.com/HPPinata/Xen-Orchestra-Install/main/compose.yml
+curl -O https://raw.githubusercontent.com/Momi-V/Xen-Orchestra-Install/main/compose.yml
 
 cat <<'EOL' > /var/orchestra/update.bash
 #!/bin/bash

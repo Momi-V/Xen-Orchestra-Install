@@ -13,7 +13,7 @@ combustion-ISO () {
   mkdir -p /var/opt/xen/ISO_Store
   isoSR=$(xe sr-create name-label=LocalISO type=iso device-config:location=/var/opt/xen/ISO_Store device-config:legacy_mode=true content-type=iso)
   
-  curl -O https://raw.githubusercontent.com/HPPinata/Xen-Orchestra-Install/main/combustion.bash
+  curl -O https://raw.githubusercontent.com/Momi-V/Xen-Orchestra-Install/main/combustion.bash
   
   while [ -z "$hashed_password" ]; do echo "Password previously unset or input inconsistent."; \
     hashed_password="$(python3 -c 'import crypt; import getpass; \
